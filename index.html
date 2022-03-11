@@ -77,8 +77,43 @@
                 <h1>Reported posts</h1>
             </div>
         </main>
-        <footer></footer>
-
+        <section class="my-5 w-75 mx-auto">
+            <h2 class="text-center my-4 text-danger">Some Asked Questions</h2>
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        How does javascript work?
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <p>
+                        we use some engine for some browser to run javascript code. like <strong>v8 for chrome.</strong> reasone to use v8 engine, our computer dose not understand programing language. so we transform that code to machine code. as if that code understand computer machine. <strong>like if any chinese man talk to you and the same time, you don't undrerstand that language . when you need a translator </strong> and How works: when v8 engine gets javascript file fast of all it parser to syntax tree that called (AST)reasone to create syntex tree, javascript is a dynamic type language .and then reads and convart bytecode .and then run javascript file <br> ,But to execute more quickly .it executes this file by his own jast in time (JIS) compilar. and i am curious to know more then it.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        How does javascript event loop work?
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>javascript is a single thread language.</strong> <p>
+                            so when we call javascript function it gose to callstack and then execute one by one. when it is synchronous. but when it is asyncronous callstack gives it to web api or c++ api, And then from there it gose to callback queue. and callstack runs after function and when end run all code that stores in callstack. then event loop gives that asyncronous code to callstack and then executes that code .and the same time if there are fetch or async await or promise. thay go to microtask queue and event loop works with microtask queue before callback queue. and i am curious to know more then it.
+                        </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </section>
+        <footer>
+            
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
         <!-- add javascript  file  -->
         <script src="./js/app.js"></script>
     </body>
